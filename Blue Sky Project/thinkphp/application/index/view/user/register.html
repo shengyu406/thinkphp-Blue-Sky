@@ -1,0 +1,38 @@
+{include file="/public/header" title="注册" css={$css} img={$img} /}
+<div class="clear"></div>
+<div class="content">
+
+<div class="reg">
+	
+	<h1>用户注册</h1>
+	
+	<div class="reg_body">
+		<form action="{:url('index/user/register')}" method="post">
+			<ul>
+				<li>
+					<label>用户名：</label>
+					<input type="text" name="name" placeholder="请输入用户名"><br/>
+				</li>
+				<li>
+					<label>密&nbsp;&nbsp;&nbsp;码：</label>
+					<input type="password" name="password" placeholder="请输入密码"><br/>
+				</li>
+				<li>
+					<label>电子邮箱：</label>
+					<input type="email" name="email" placeholder="请输入电子邮箱"><br/>
+				</li>
+				<li>
+					<label>联系方式：</label>
+					<input type="text" name="phone" placeholder="请输入手机号码"><br/>
+				</li>
+				<li>
+					<input type="submit" value="注册">	
+					<input type="reset" value="重置">	
+				</li>
+			</ul>
+		</form>
+	</div>
+</div>
+
+</div>
+{include file="/public/footer"/}

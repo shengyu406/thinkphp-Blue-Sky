@@ -1,0 +1,24 @@
+{include file="/public/header" title="留言板" css={$css} img={$img} /}
+<div class="banner">
+  <div id="content" >
+    <div class="wrap">
+		<form action="{:url('index/message/upd_add',['id'=>$message.id])}" method="post">
+      <div class="comment">
+        <div class="head-face"> <img src="{$img}user.jpg" / > </div>
+        <div class="content">
+          <div class="cont-box">
+            <textarea class="text" name="content" placeholder="请输入你要说的内容...">{$message.content}</textarea>
+          </div>
+          <div class="tools-box">
+            <div class="submit-btn">
+              <input type="submit" value="提交评论" />
+            </div>
+          </div>
+        </div>
+      </div>
+	 </form>
+     
+    </div>
+  </div>
+{include file="/public/footer"/}
+
